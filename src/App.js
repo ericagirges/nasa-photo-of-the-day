@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Date from "./Date";
 import PhotoContainer from "./PhotoContainer";
+import Archive from "./Archive";
 import {BASE_URL, API_KEY} from "./index"
 // import axios
 import axios from "axios";

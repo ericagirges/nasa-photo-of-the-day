@@ -1,8 +1,7 @@
 import React from "react";
-import Archive from "./Archive";
 import PhotoContainer from "./PhotoContainer";
 
-const Date = props => {
+const Archive = props => {
     const {photoOfDay, date} = props
 }
 
@@ -10,7 +9,8 @@ const Date = props => {
 
 return (
     
-
 )
 
-export default Date;
+
+
+export default Archive;
