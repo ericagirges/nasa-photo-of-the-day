@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import "./App.css";
 import Header from "./Header";
 import Date from "./Date";
-import PhotoOfDay from "./PhotoOfDay";
+import PhotoContainer from "./PhotoContainer";
 import {BASE_URL, API_KEY} from "./index"
 // import axios
 import axios from "axios";
@@ -28,7 +28,11 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p> */}
+      {
+      <Header photoOfDay={photoOfDay} date={date} />
+      }
     </div>
+    
   );
 }
 
