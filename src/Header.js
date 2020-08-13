@@ -1,25 +1,14 @@
 import React from "react";
-import Date from "./Date";
 
+const Header = () => {
 
-const Header = props => {
-    const {photoOfDay, date} = props
-
-    return (
-        <div className="header">
-        <header>
-            <h1>
-                Astronomy Photo of the Day! 💫
-            </h1>
-        </header>
-        <div className="display-date">
-            {
-                <Date date={date} photoOfDay={photoOfDay}/>
-            }
-        </div>
-        </div>
-        
-    );
+  return (
+    <div className="header">
+      <header>
+        <h1>Astronomy Photo of the Day! 💫</h1>
+      </header>
+    </div>
+  );
 };
 
 export default Header;
