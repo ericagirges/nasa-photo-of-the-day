@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import moment from "moment";
-import Header from "./Header";
-import DateLabel from "./DateLabel";
-import PhotoContainer from "./PhotoContainer";
-import DatePicker from "./DatePicker";
+import Header from "./components/Header";
+import DateLabel from "./components/DateLabel";
+import PhotoContainer from "./components/PhotoContainer";
+import DatePicker from "./components/DatePicker";
 import { BASE_URL, API_KEY } from "./index";
 // import axios
 import axios from "axios";
@@ -31,9 +31,8 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p> */}
-      <Header />
+      <Header date={date} setDate={setDate} />
       <DateLabel date={date} />
-      <DatePicker date={date} setDate={setDate} />
       {photoOfDay ? (
         <PhotoContainer photoOfDay={photoOfDay} setPhotoOfDay={setPhotoOfDay} />
       ) : (
