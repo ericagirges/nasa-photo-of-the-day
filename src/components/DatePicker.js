@@ -1,6 +1,11 @@
 import React, {useState} from "react";
 import ReactDatePicker from 'react-datepicker';
-import styled from "styled-components";
+import styled, { keyframes }from "styled-components";
+
+const Container = styled.div`
+display: flex;
+
+`
 
 const DatePickerDiv = styled.div `
 display: flex;
@@ -24,17 +29,45 @@ font-size: 1.2em;
     text-align: center;
     border: none;
 
+    &:hover {
+      border: 2px solid white;
+    }
+
   }
+`;
+
+const spinningAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+const Icon = styled.div`
+  background-image: url("/little-astronaut.png");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: 40px;
+  animation-name: ${spinningAnimation};
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 `;
 
 const DatePicker = (props) => {
     const {date, setDate} = props
   return (
+    <Container>
     <DatePickerDiv>
       <h3>Click here to view all photos by date:</h3>
     <ReactDatePicker selected={date} onChange={setDate} />
-    
     </DatePickerDiv>
+    <Icon role="image" aria-label="astronaut spinning"></Icon>
+    </Container>
   );
 };
 
