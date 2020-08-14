@@ -7,6 +7,7 @@ import styled, { keyframes } from "styled-components";
 const StyledHeader = styled.header`
   background-color: ${props => props.theme.black};
   padding: ${props => props.theme.paddingMedium};
+  
 `;
 
 const StyledH1 = styled.h1`

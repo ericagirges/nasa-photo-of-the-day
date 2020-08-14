@@ -32,7 +32,7 @@ const PhotoDescription = styled.div `
 
     @media (max-width: ${props => props.theme.tabletBreakpoint}) {
         h2 {
-            margin: 0 10px;
+            margin: 0 30px;
             font-size: 1.2em;
         }
 
