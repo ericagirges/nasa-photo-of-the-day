@@ -21,7 +21,7 @@ const PhotoDescription = styled.div `
     h2 {
         padding-top: 50px;
         color: ${props => props.theme.secondaryColor};
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
     p {
         color: ${props => props.theme.white};
