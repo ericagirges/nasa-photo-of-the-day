@@ -5,9 +5,11 @@ const theme = {
     teritaryColor: "#747475",
     paddingSmall: "1em",
     paddingMedium: "2em",
-    white: 'white',
-    black: 'black',
-    tabletBreakpoint: '400px',
+    white: "white",
+    black: "black",
+    tabletBreakpoint: "600px",
+    mobileBreakpoint: "500px",
+    designBreakpoint: "880px",
 }
 
 

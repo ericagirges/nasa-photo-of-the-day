@@ -6,6 +6,13 @@ const Photo = styled.img `
     height: 500px;
     width: auto;
     border-radius: 10px;
+
+    @media (max-width: ${props => props.theme.tabletBreakpoint}) {
+      width: 80%;
+      height: auto;
+    }
+
+
 `
 const PhotoDescription = styled.div `
     background-color: ${props => props.theme.black};
@@ -21,6 +28,18 @@ const PhotoDescription = styled.div `
         padding: 0 30px;
         font-size: 1.2em;
         
+    }
+
+    @media (max-width: ${props => props.theme.tabletBreakpoint}) {
+        h2 {
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+      
     }
 `
 

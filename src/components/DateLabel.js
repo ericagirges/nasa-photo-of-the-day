@@ -6,6 +6,11 @@ const DateDiv = styled.div`
     color: ${props => props.theme.primaryColor};
     font-size: 1.6em;
 
+    @media (max-width: ${props => props.theme.tabletBreakpoint}) {
+        font-size: 1.2em;
+      
+    }
+
 `
 
 const DateLabel = props => {
